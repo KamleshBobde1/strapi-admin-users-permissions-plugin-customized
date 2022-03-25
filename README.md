@@ -1,3 +1,21 @@
+# Get the customized plugins up and running:
+
+1. src/extensions/users-permissions$ `npm install`
+2. src/admin$ `npm install`
+3. Open this file: `~/strapi-admin-users-permissions-plugin-customized/node_modules/@strapi/strapi/lib/core/loaders/admin.js`
+```
+strapi.admin = require('@strapi/admin/strapi-server');
+
+replace the above code(line 6) with below line(example):
+
+strapi.admin = require('/home/kamleshbobde/Desktop/strapi-admin-users-permissions-plugin-customized/src/admin/strapi-server');
+
+Need to give path upto ~/strapi-admin-users-permissions-plugin-customized/src/admin/strapi-server.js
+
+```
+4. ~/strapi-admin-users-permissions-plugin-customized$ `npm run develop`
+
+#
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
