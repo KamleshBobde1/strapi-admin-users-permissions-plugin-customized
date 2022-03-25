@@ -10,7 +10,7 @@ replace the above code(line 6) with below line(example):
 
 strapi.admin = require('/home/kamleshbobde/Desktop/strapi-admin-users-permissions-plugin-customized/src/admin/strapi-server');
 
-Need to give path upto ~/strapi-admin-users-permissions-plugin-customized/src/admin/strapi-server.js
+[here we have given path upto ~/strapi-admin-users-permissions-plugin-customized/src/admin/strapi-server.js]
 
 ```
 4. ~/strapi-admin-users-permissions-plugin-customized$ `npm run develop`
